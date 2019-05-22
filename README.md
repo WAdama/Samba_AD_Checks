@@ -1,7 +1,7 @@
 # Samba AD Checks
 Simple script senors for PRTG by Paessler to check the health of a Samba AD
 
-The first script - ad_check_db.sh - using samba-tool dbcheck to get just the checked objects and found errors. The variant of this script - ad_check_db_mail.sh - can be used to send a mail with the full output of samba-tool dbcheck if your AD has the capability to send mails.
+The first script - ad_check_db.sh - is using samba-tool dbcheck to get just the checked objects and found errors. The variant of this script - ad_check_db_mail.sh - can be used to send a mail with the full output of samba-tool dbcheck if your AD DC has the capability to send mails.
 
 ### Prerequisites
 
@@ -17,6 +17,12 @@ Place the script to /var/prtg/scriptsxml on your Synology NAS and make it execut
 
 ```
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db.sh
+chmod +x ad_check_db.sh
+```
+or
+
+```
+wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db_mail.sh
 chmod +x ad_check_db.sh
 ```
 
