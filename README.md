@@ -49,7 +49,10 @@ In PRTG create under your device which represents your Synology a SSH custom adv
 Choose under "Script" the script you want to use script and enter for the mail versions under "Parameters" the e-mail address which should get the mails, e.g. "test@test.de".
 
 Example for ad_check_db.sh sensor:
+
 ![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Database_Health_Sensor.png)
 
+
 Example for ad_check_rep.sh sensor:
+
 ![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Replication_Sensor.png)
