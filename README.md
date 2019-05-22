@@ -26,7 +26,7 @@ For ad_check_db.sh:
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db.sh
 chmod +x ad_check_db.sh
 ```
-or
+or ad_check_db_mail.sh:
 
 ```
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db_mail.sh
@@ -37,7 +37,7 @@ For ad_check_rep.sh:
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_rep.sh
 chmod +x ad_check_db.sh
 ```
-or
+or ad_check_rep.sh_mail:
 
 ```
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_rep_mail.sh
