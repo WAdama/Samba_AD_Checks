@@ -7,6 +7,8 @@ The second script - ad_check_rep - is using samba-tool drs showrepl to count the
 
 Both sensor have set a standard warning limit of zero so when at least one error is counted the sensor goes into warning state.
 
+Because of AD replication and samba-tool drs showrepl reports inbound and outbound replication it should be enough to create this sensors on one of your AD DCs.
+
 ### Prerequisites
 
 Be sure you have set correct logon values for SSH in your device.
@@ -19,6 +21,7 @@ I personally use "Login via private key" with an user especially for monitoring 
 
 Place the script to /var/prtg/scriptsxml on your Synology NAS and make it executable. (You may have to create this directory structure because PRTG expects the script here.)
 
+For ad_check_db.sh:
 ```
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db.sh
 chmod +x ad_check_db.sh
@@ -29,7 +32,18 @@ or
 wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_db_mail.sh
 chmod +x ad_check_db.sh
 ```
+For ad_check_rep.sh:
+```
+wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_rep.sh
+chmod +x ad_check_db.sh
+```
+or
+
+```
+wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_rep_mail.sh
+chmod +x ad_check_db.sh
+```
 
 In PRTG create under your device which represents your Synology a SSH custom advanced senor.
 
-Choose under "Script" this script and enter under "Parameters" the name of the volume you want to monitor: e.g. volume1.
+Choose under "Script" the script you want to use script and enter for the mail versions under "Parameters" the e-mail address which should get the mails, e.g. "test@test.de".
