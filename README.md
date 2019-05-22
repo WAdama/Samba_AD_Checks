@@ -1,9 +1,9 @@
 # Samba AD Checks
 Simple script sensors for PRTG by Paessler to check the health of a Samba AD
 
-The first script - ad_check_db.sh - is using ***samba-tool dbcheck*** to get just the checked objects and found errors. The variant of this script - ad_check_db_mail.sh - can be used to send a mail with the full output of samba-tool dbcheck if your AD DC has the capability to send mails.
+The first script - ad_check_db.sh - is using ***samba-tool dbcheck*** to get just the checked objects and found errors. The variant of this script - ad_check_db_mail.sh - can be used to send a mail with the full output of samba-tool dbcheck when an error is found  if your AD DC has the capability to send mails.
 
-The second script - ad_check_rep - is using ***samba-tool drs showrepl*** to count the consecutive erros found in AD DC replication. This script comes with the possibility of mailing, too.
+The second script - ad_check_rep - is using ***samba-tool drs showrepl*** to count the consecutive errors found in AD DC replication. This script comes with the possibility of mailing, too.
 
 Both sensor have set a standard warning limit of zero so when at least one error is counted the sensor goes into warning state.
 
