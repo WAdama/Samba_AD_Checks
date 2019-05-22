@@ -44,9 +44,9 @@ wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_re
 chmod +x ad_check_db.sh
 ```
 
-In PRTG create under your device which represents your Synology a SSH custom advanced senor.
+In PRTG create under your device which represents your Samba AD DC a SSH custom advanced senor.
 
-Choose under "Script" the script you want to use script and enter for the mail versions under "Parameters" the e-mail address which should get the mails, e.g. "test@test.de".
+Choose under "Script" the script you want to use and enter for the mail versions under "Parameters" the e-mail address which should get the mails like "test@test.de".
 
 Example for ad_check_db.sh sensor:
 
