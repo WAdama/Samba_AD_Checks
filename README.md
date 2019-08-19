@@ -52,9 +52,9 @@ Choose under "Script" the script you want to use and enter for the mail versions
 
 Example for ad_check_db.sh sensor:
 
-![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Database_Health_Sensor.png)
+![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Database_Health_Sensor2.png)
 
 
 Example for ad_check_rep.sh sensor:
 
-![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Replication_Sensor.png)
+![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Replication_Sensor2.png)
