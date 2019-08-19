@@ -44,7 +44,7 @@ wget https://raw.githubusercontent.com/WAdama/Samba_AD_Checks/master/ad_check_re
 chmod +x ad_check_db.sh
 ```
 
-On your PRTG system place the file prtg.standardlookups.nas.abstatus.ovl in *INSTALLDIR\PRTG Network Monitor\lookups\custom* and refresh it under **System Administration / Administrative Tools**
+On your PRTG system place the file prtg.standardlookups.nas.adstatus.ovl in *INSTALLDIR\PRTG Network Monitor\lookups\custom* and refresh it under **System Administration / Administrative Tools**
 
 In PRTG create under your device which represents your Samba AD DC a SSH custom advanced senor.
 
