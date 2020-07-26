@@ -1,7 +1,8 @@
 #!/bin/bash
-#Version 1.0.1
+#Version 1.0.2
 RECIPIENT=$1
-DBCHECK=`samba-tool dbcheck`
+SAMBA_BIN="/usr/local/samba/bin"
+DBCHECK=`$SAMBA_BIN/samba-tool dbcheck`
 IFS=" " read -a ERRORS <<< `echo "$DBCHECK" | tail -1`
 if [ ${ERRORS[3]//(} -gt 0 ]
 then
