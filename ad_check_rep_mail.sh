@@ -1,7 +1,8 @@
 #!/bin/bash
-#Version 1.0.1
+#Version 1.0.2
 RECIPIENT=$1
-REPL=`samba-tool drs showrepl`
+SAMBA_BIN="/usr/local/samba/bin"
+REPL=`$SAMBA_BIN/samba-tool drs showrepl`
 TOTAL=0
 while IFS=" " read -ra LINE
 do
