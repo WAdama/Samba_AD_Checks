@@ -1,6 +1,7 @@
 #!/bin/bash
-#Version 1.0.1
-REPL=`samba-tool drs showrepl | grep consecutive`
+#Version 1.0.2
+SAMBA_BIN="/usr/local/samba/bin"
+REPL=`$SAMBA_BIN/samba-tool drs showrepl | grep consecutive`
 TOTAL=0
 while IFS=" " read -ra LINE
 do
