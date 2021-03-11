@@ -15,7 +15,7 @@ Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with an user especially for monitoring which also may use sudo for this script without a password.
 
-![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/ssh_settings.png)
+![Screenshot1](./images/ssh_settings.png)
 
 ### Installing
 
@@ -52,9 +52,9 @@ Choose under "Script" the script you want to use and enter for the mail versions
 
 Example for ad_check_db.sh sensor:
 
-![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Database_Health_Sensor2.png)
+![Screenshot1](./images/AD_Database_Health_Sensor2.png)
 
 
 Example for ad_check_rep.sh sensor:
 
-![Screenshot1](https://github.com/WAdama/Samba_AD_Checks/blob/master/images/AD_Replication_Sensor2.png)
+![Screenshot1](./images/AD_Replication_Sensor2.png)
