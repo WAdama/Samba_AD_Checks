@@ -51,4 +51,4 @@ Example for ad_check_db.sh sensor:
 
 Example for ad_check_rep.sh sensor:
 
-![Screenshot1](./images/AD_Replication_Sensor2.png)
+![Screenshot1](./images/AD_Replication_Sensor_json.png)
