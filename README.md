@@ -7,8 +7,6 @@ The second script - ad_check_rep - is using ***samba-tool drs showrepl*** to loo
 
 Both sensor have set a standard warning limit of zero so when at least one error is counted the sensor goes into warning state.
 
-Because of AD replication and ***samba-tool drs showrepl*** reports inbound and outbound replication it should be enough to create this sensors on one of your AD DCs.
-
 ### Prerequisites
 
 Be sure you have set correct logon values for SSH in your device.
