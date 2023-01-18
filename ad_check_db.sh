@@ -1,8 +1,8 @@
 #!/bin/bash
-#Version 1.0.2
-SAMBA_BIN="/usr/local/samba/bin"
-IFS=" " read -a ERRORS <<< `$SAMBA_BIN/samba-tool dbcheck | tail -1`
-if [ ${ERRORS[3]//(} == 0 ]
+#Version 1.0.3
+SAMTOOL=$(which samba-tool)
+IFS=" " read -r -a ERRORS <<< "$("$SAMTOOL" dbcheck | tail -1)"
+if [ "${ERRORS[3]//(}" == 0 ]
 then STATUS=0
 else STATUS=1
 fi
